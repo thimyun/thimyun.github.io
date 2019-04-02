@@ -3,27 +3,51 @@
 	<head>
 		<title>Thim's github.io</title>
     <style>
-        .Aligner {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        .Aligner-item {
-          max-width: 50%;
-        }
-        .Aligner-item--top {
-          align-self: flex-start;
-        }
-        .Aligner-item--bottom {
-          align-self: flex-end;
-        }
+        html, body {
+						height: 100%;
+				}
+				body {
+						margin: 0;
+				}
+				.flex-container {
+						height: 100%;
+						padding: 0;
+						margin: 0;
+						display: -webkit-box;
+						display: -moz-box;
+						display: -ms-flexbox;
+						display: -webkit-flex;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+				}
+				.row {
+						width: auto;
+						border: 1px solid blue;
+				}
+				.flex-item {
+						background-color: tomato;
+						padding: 5px;
+						width: 20px;
+						height: 20px;
+						margin: 10px;
+						line-height: 20px;
+						color: white;
+						font-weight: bold;
+						font-size: 2em;
+						text-align: center;
+				}
+
     </style>
 	</head>
 	<body>
-    <div class="Aligner">
-      <div class="Aligner-item Aligner-item--top">…</div>
-      <div class="Aligner-item">…</div>
-      <div class="Aligner-item Aligner-item--bottom">…</div>
-    </div>
+    <div class="flex-container">
+				<div class="row"> 
+						<div class="flex-item">1</div>
+						<div class="flex-item">2</div>
+						<div class="flex-item">3</div>
+						<div class="flex-item">4</div>
+				</div>
+		</div>
 	</body>
 </html>
